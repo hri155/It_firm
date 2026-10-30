@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MSAIT LTD | IT Solutions & Digital Innovation</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@5"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="main-bg border-b border-sky-900 sticky top-0 z-50">
+
+    <div class="site-container navbar min-h-20 px-0">
+
+      <div class="navbar-start">
+        <a href="#home" class="flex items-center gap-2">
+          <img
+            src="Images/logo.jpeg"
+            alt="MSAIT LTD Logo"
+            class="w-20 h-20 object-contain"
+          >
+
+          <div>
+            <h2 class="text-xl md:text-2xl font-bold tracking-wide">
+              MSA<span class="cyan">IT</span>
+            </h2>
+
+            <p class="text-[9px] tracking-[3px] text-slate-400">
+              IDEAS | TECHNOLOGY | TOMORROW
+            </p>
+          </div>
+
+        </a>
+      </div>
+
+      <nav class="navbar-center hidden lg:flex gap-8">
+
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#solutions" class="nav-link">Solutions</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+
+      </nav>
+
+      <div class="navbar-end gap-3">
+
+        <a href="#contact" class="primary-btn hidden sm:inline-flex">
+          Let's Talk <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <div class="dropdown dropdown-end lg:hidden">
+
+          <button
+            tabindex="0"
+            class="btn btn-ghost btn-circle text-xl"
+            aria-label="Open navigation menu"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <ul
+            tabindex="0"
+            class="dropdown-content menu bg-[#061a31] rounded-box z-50 mt-4 w-52 p-3 shadow-xl border border-sky-900"
+          >
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main class="main-bg">
+
+    <section id="home" class="hero-section">
+
+      <div class="site-container grid lg:grid-cols-2 gap-8 items-center py-12 lg:py-14">
+
+        <div class="relative z-10 order-2 lg:order-1">
+
+          <p class="section-label mb-3">MSAIT LTD</p>
+
+          <h1 class="text-4xl md:text-5xl lg:text-[54px] font-extrabold leading-[1.12] tracking-tight">
+
+            Building Smarter
+
+            <span class="gradient-text block mt-1">
+              Digital Futures.
+            </span>
+
+          </h1>
+
+          <p class="text-slate-300 text-sm leading-7 mt-5 max-w-lg">
+
+            MSAIT LTD delivers reliable and innovative IT solutions,
+            including software development, IT support, networking,
+            and technology consultancy — helping businesses grow
+            and stay ahead in a digital world.
+
+          </p>
+
+          <div class="flex flex-wrap gap-4 mt-6">
+
+            <a href="#services" class="primary-btn">
+              Explore Our Services
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#contact" class="outline-btn">
+              Get in Touch
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+          </div>
+
+          <div class="flex flex-wrap gap-x-6 gap-y-4 mt-8 text-xs text-slate-300">
+
+            <span>
+              <i class="fa-solid fa-shield-halved cyan mr-2"></i>
+              Secure Solutions
+            </span>
+
+            <span>
+              <i class="fa-solid fa-bolt cyan mr-2"></i>
+              Fast Support
+            </span>
+
+            <span>
+              <i class="fa-solid fa-users cyan mr-2"></i>
+              Expert Team
+            </span>
+
+          </div>
+
+        </div>
+
+        <div class="relative order-1 lg:order-2">
+
+          <img
+            src="Images/hero.jpeg"
+            alt="Modern IT workspace with computers and servers"
+            class="hero-image"
+          >
+
+          <div class="hero-overlay"></div>
+
+          <!-- <div class="absolute top-[12%] right-[8%] hidden sm:flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-xl border border-sky-500 bg-[#052b50]/90 shadow-lg">
+
+            <i class="fa-solid fa-cloud-arrow-up text-3xl cyan"></i>
+
+          </div> -->
+
+          <!-- <div class="absolute top-[42%] right-[2%] hidden sm:flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-xl border border-sky-500 bg-[#052b50]/90 shadow-lg">
+
+            <i class="fa-solid fa-shield-halved text-3xl cyan"></i>
+
+          </div>
+
+          <div class="absolute bottom-[10%] right-[20%] hidden sm:flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-xl border border-sky-500 bg-[#052b50]/90 shadow-lg">
+
+            <i class="fa-solid fa-code text-3xl cyan"></i>
+
+          </div> -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="site-container py-3">
+
+      <div class="stats-box grid grid-cols-2 lg:grid-cols-4 gap-2 p-3 md:p-4">
+
+        <div class="stat-item">
+
+          <div class="stat-icon">
+            <i class="fa-solid fa-display"></i>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold">300+</h3>
+            <p class="text-xs text-slate-300 mt-1">Projects Completed</p>
+          </div>
+
+        </div>
+
+        <div class="stat-item">
+
+          <div class="stat-icon">
+            <i class="fa-regular fa-user"></i>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold">99%</h3>
+            <p class="text-xs text-slate-300 mt-1">Client Satisfaction</p>
+          </div>
+
+        </div>
+
+        <div class="stat-item">
+
+          <div class="stat-icon">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold">24/7</h3>
+            <p class="text-xs text-slate-300 mt-1">Support Availability</p>
+          </div>
+
+        </div>
+
+        <div class="stat-item">
+
+          <div class="stat-icon">
+            <i class="fa-solid fa-users"></i>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold">100+</h3>
+            <p class="text-xs text-slate-300 mt-1">Happy Clients</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="services" class="site-container py-20">
+
+      <div class="grid lg:grid-cols-[0.85fr_1.6fr] gap-10 lg:gap-16">
+
+        <div>
+
+          <p class="section-label mb-3">Our Services</p>
+
+          <h2 class="section-title">
+            IT Solutions for
+            <span class="gradient-text block">
+              a Better Tomorrow.
+            </span>
+          </h2>
+
+          <p class="text-slate-300 text-sm leading-7 mt-4">
+
+            We offer a complete range of IT services to help individuals
+            and businesses stay connected, secure, and productive.
+
+          </p>
+
+          <a href="#contact" class="outline-btn mt-6">
+            View All Services
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+          <div class="service-card">
+
+            <div class="service-icon">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+
+            <h3>Computer Repairs</h3>
+
+            <p>
+              Hardware and software repairs, upgrades and replacements.
+            </p>
+
+            <a href="#contact" class="service-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+          </div>
+
+          <div class="service-card">
+
+            <div class="service-icon">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+
+            <h3>Network Infrastructure</h3>
+
+            <p>
+              Secure, scalable and efficient network solutions.
+            </p>
+
+            <a href="#contact" class="service-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+          </div>
+
+          <div class="service-card">
+
+            <div class="service-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+
+            <h3>Software & Web Solutions</h3>
+
+            <p>
+              Custom software, web apps and digital solutions.
+            </p>
+
+            <a href="#contact" class="service-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+          </div>
+
+          <div class="service-card">
+
+            <div class="service-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <h3>IT Consultancy & Cybersecurity</h3>
+
+            <p>
+              Strategic guidance and advanced security for your business.
+            </p>
+
+            <a href="#contact" class="service-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+          </div>
+
+          <div class="service-card">
+
+            <div class="service-icon">
+              <i class="fa-solid fa-cloud"></i>
+            </div>
+
+            <h3>System Updates</h3>
+
+            <p>
+              Keep your systems secure and up to date.
+            </p>
+
+            <a href="#contact" class="service-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+          </div>
+
+          <div class="service-card">
+
+            <div class="service-icon">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+
+            <h3>IT Support</h3>
+
+            <p>
+              Remote and on-site support for your IT issues.
+            </p>
+
+            <a href="#contact" class="service-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="about" class="border-y border-sky-950 bg-[#031123]">
+
+      <div class="site-container grid lg:grid-cols-2 gap-10 items-center py-12">
+
+        <div>
+
+          <img
+            src="Images/About.jpeg"
+            alt="Professional IT office workstation"
+            class="about-image"
+          >
+
+        </div>
+
+        <div>
+
+          <p class="section-label mb-3">About MSAIT LTD</p>
+
+          <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+            Technology. Expertise. Trust.
+          </h2>
+
+          <p class="text-slate-300 text-sm leading-6 mt-4">
+
+            MSAIT LTD is a forward-thinking IT solutions company,
+            committed to delivering innovative, secure and scalable
+            technology solutions. We work closely with our clients
+            to understand their goals and provide the right tools
+            and support for long-term success.
+
+          </p>
+
+          <div class="grid sm:grid-cols-3 gap-5 mt-7">
+
+            <div class="flex items-start gap-3">
+
+              <div class="feature-icon">
+                <i class="fa-solid fa-users"></i>
+              </div>
+
+              <div>
+                <h4 class="text-xs font-semibold">Experienced Team</h4>
+
+                <p class="text-[11px] text-slate-400 mt-2 leading-5">
+                  Skilled professionals with real-world expertise.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="flex items-start gap-3">
+
+              <div class="feature-icon">
+                <i class="fa-solid fa-gear"></i>
+              </div>
+
+              <div>
+                <h4 class="text-xs font-semibold">Proven Solutions</h4>
+
+                <p class="text-[11px] text-slate-400 mt-2 leading-5">
+                  Trusted technology for different business needs.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="flex items-start gap-3">
+
+              <div class="feature-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+
+              <div>
+                <h4 class="text-xs font-semibold">Long-Term Partnership</h4>
+
+                <p class="text-[11px] text-slate-400 mt-2 leading-5">
+                  Your growth is our priority.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="solutions" class="site-container py-14">
+
+      <div class="grid lg:grid-cols-2 gap-12">
+
+        <div>
+
+          <p class="section-label mb-3">Industries We Serve</p>
+
+          <h2 class="text-2xl font-bold">
+            Empowering Different Industries
+          </h2>
+
+          <p class="text-slate-300 text-sm leading-6 mt-3 max-w-lg">
+
+            We provide IT solutions for a wide range of industries,
+            helping businesses work smarter and achieve more.
+
+          </p>
+
+          <div class="grid grid-cols-5 gap-3 mt-7">
+
+            <div class="industry-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Education</span>
+            </div>
+
+            <div class="industry-item">
+              <i class="fa-solid fa-heart-pulse"></i>
+              <span>Healthcare</span>
+            </div>
+
+            <div class="industry-item">
+              <i class="fa-solid fa-building-columns"></i>
+              <span>Finance</span>
+            </div>
+
+            <div class="industry-item">
+              <i class="fa-solid fa-store"></i>
+              <span>Retail</span>
+            </div>
+
+            <div class="industry-item">
+              <i class="fa-solid fa-city"></i>
+              <span>Corporate</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div id="projects" class="border-t lg:border-t-0 lg:border-l border-sky-950 pt-8 lg:pt-0 lg:pl-8">
+
+          <p class="section-label mb-3">Our Projects</p>
+
+          <h2 class="text-2xl font-bold">
+            Recent Work & Success Stories
+          </h2>
+
+          <p class="text-slate-300 text-sm leading-6 mt-3 mb-6">
+
+            Take a look at some of our recent projects and the
+            impact we've made for our clients.
+
+          </p>
+
+          <div class="project-card">
+
+            <img
+              src="Images/work.jpeg"
+              alt="IT infrastructure and server installation"
+            >
+
+            <div class="project-info">
+
+              <span>IT Infrastructure Setup</span>
+
+              <a href="#contact" class="cyan" aria-label="Discuss a project">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+            </div>
+
+          </div>
+
+          <a href="#contact" class="outline-btn mt-6">
+            View Projects
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="contact" class="contact-banner">
+
+    <div class="max-w-7xl mx-auto px-6 py-16">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+        <div>
+            <p class="text-cyan-400 text-xs tracking-[4px] font-semibold mb-4">
+            GET IN TOUCH
+            </p>
+
+            <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight">
+            Let's Build Something
+            <span class="text-cyan-400">Great Together.</span>
+            </h2>
+
+            <p class="text-slate-400 mt-5 max-w-lg leading-7">
+            Have a project in mind or need IT support?
+            Contact our team for reliable IT solutions
+            tailored to your business.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+            <div class="flex items-start gap-4">
+            <div class="text-cyan-400 text-2xl">
+                <i class="fa-regular fa-envelope" style="color:cyan-400"></i>
+            </div>
+
+            <div>
+                <h3 class="text-white font-semibold mb-2">Email Us</h3>
+
+                <a href="mailto:msaitlimited@hotmail.com"
+                class="text-slate-400 hover:text-cyan-400 transition break-all">
+                msaitlimited@hotmail.com
+                </a>
+            </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+            <div class="text-cyan-400 text-2xl">
+                <i class="fa-solid fa-mobile-screen-button" style="color:cyan-400"></i>
+            </div>
+
+            <div>
+                <h3 class="text-white font-semibold mb-2">Call Us</h3>
+
+                <a href="tel:+447777355543"
+                class="text-slate-400 hover:text-cyan-400 transition">
+                +44 7777 355543
+                </a>
+            </div>
+            </div>
+
+            <div class="flex items-start gap-4 sm:col-span-2">
+            <div class="text-cyan-400 text-2xl">
+                <i class="fa-solid fa-location-dot" style="color:cyan-400"></i>
+            </div>
+
+            <div>
+                <h3 class="text-white font-semibold mb-2">Our Location</h3>
+
+                <p class="text-slate-400 leading-6">
+                    105 jubilee Avenue <br>
+                    Romford <br>
+                    RM7 9LT
+                </p>
+            </div>
+            </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+    </section>
+
+  </main>
+
+  <footer class="bg-[#020b18]">
+
+    <div class="site-container py-8">
+
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-7">
+
+        <a href="#home" class="flex items-center gap-2">
+
+          <img
+            src="Images/logo.jpeg"
+            alt="MSAIT LTD Logo"
+            class="w-12 h-12 object-contain"
+          >
+
+          <div>
+            <h2 class="text-xl font-bold">
+              MSA<span class="cyan">IT</span>
+            </h2>
+
+            <p class="text-[8px] tracking-[2px] text-slate-400">
+              IDEAS | TECHNOLOGY | TOMORROW
+            </p>
+          </div>
+
+        </a>
+
+        <nav class="flex flex-wrap justify-center gap-x-6 gap-y-3">
+
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#services" class="footer-link">Services</a>
+          <a href="#solutions" class="footer-link">Solutions</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#contact" class="footer-link">Contact</a>
+
+        </nav>
+
+        <div class="flex gap-2">
+
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a href="#" class="social-link" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="#" class="social-link" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <a href="mailto:info@example.com" class="social-link" aria-label="Email">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="border-t border-sky-950 mt-7 pt-5 flex flex-col sm:flex-row justify-between gap-3 text-xs text-slate-400">
+
+        <p>
+          © <span id="year"></span> MSAIT LTD. All rights reserved.
+        </p>
+
+        <div class="flex gap-4">
+
+          <a href="#" class="footer-link">
+            Privacy Policy
+          </a>
+
+          <span>|</span>
+
+          <a href="#" class="footer-link">
+            Terms & Conditions
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    const menuLinks = document.querySelectorAll(
+      ".dropdown-content a"
+    );
+
+    menuLinks.forEach(function(link) {
+      link.addEventListener("click", function() {
+        const dropdown = link.closest(".dropdown");
+
+        if (dropdown) {
+          const button = dropdown.querySelector("button");
+
+          if (button) {
+            button.blur();
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
