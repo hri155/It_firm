@@ -66,22 +66,20 @@
 
             </div>
 
-            <nav class="navbar-center hidden lg:flex gap-8">
+           <nav class="navbar-center lg:flex gap-8">
 
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#solutions" class="nav-link">Solutions</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
+              <a href="#home" class="nav-link">Home</a>
+              <a href="#about" class="nav-link">About</a>
+              <a href="#services" class="nav-link">Services</a>
+              <a href="#projects" class="nav-link">Projects</a>
+               <a href="#solutions" class="nav-link">Solutions</a>
 
-            </nav>
+          </nav>
 
             <div class="navbar-end gap-3">
 
-                <a href="#contact" class="primary-btn hidden sm:inline-flex">
+                <a href="#contact" class="primary-btn sm:inline-flex">
                     Let's Talk
-                    <i class="fa-solid fa-arrow-right"></i>
                 </a>
 
 
@@ -108,7 +106,7 @@
                         <a href="#solutions">Solutions</a>
                         <a href="#about">About</a>
                         <a href="#projects">Projects</a>
-                        <a href="#contact">Contact</a>
+                        <!-- <a href="#contact">Contact</a> -->
                         <a href="#terms">Terms & Conditions</a>
 
                     </nav>
@@ -680,10 +678,6 @@
 
                             <span>IT Infrastructure Setup</span>
 
-                            <!-- <a href="#contact" class="cyan" aria-label="Discuss an IT infrastructure project">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a> -->
-
                         </div>
 
                     </article>
@@ -701,9 +695,6 @@
 
                             <span>Website Development</span>
 
-                            <!-- <a href="#contact" class="cyan" aria-label="Discuss a website project">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a> -->
 
                         </div>
 
@@ -721,10 +712,6 @@
                         <div class="project-info">
 
                             <span>Network Infrastructure</span>
-
-                            <!-- <a href="#contact" class="cyan" aria-label="Discuss a network project">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a> -->
 
                         </div>
 
@@ -867,117 +854,142 @@
 
         <section id="terms" class="terms-section">
 
-            <div class="site-container py-16">
+    <div class="site-container py-10">
 
-                <p class="section-label mb-3">
-                    LEGAL INFORMATION
-                </p>
+        <p class="section-label mb-3">
+            LEGAL INFORMATION
+        </p>
 
-                <h2 class="section-title">
-                    Terms & Conditions
-                </h2>
+        <button
+            type="button"
+            id="toggleTermsBtn"
+            class="terms-toggle-btn"
+            aria-expanded="false"
+            aria-controls="termsContent"
+        >
 
-                <p class="terms-intro">
+            <span>
+                <i class="fa-solid fa-file-contract mr-2"></i>
+                Terms & Conditions
+            </span>
 
-                    Please read these terms and conditions before
-                    using the MSAIT LTD website or enquiring about services.
+            <i
+                id="termsToggleIcon"
+                class="fa-solid fa-chevron-down"
+            ></i>
 
-                </p>
-
-
-                <div class="terms-grid">
-
-                    <article class="terms-card">
-
-                        <h3>01. Website Use</h3>
-
-                        <p>
-                            This website provides general information about
-                            MSAIT LTD and its IT services. You agree to use
-                            this website lawfully and not to misuse its content
-                            or functionality.
-                        </p>
-
-                    </article>
+        </button>
 
 
-                    <article class="terms-card">
+        <div id="termsContent" class="hidden mt-8">
 
-                        <h3>02. Services and Agreements</h3>
+            <h2 class="section-title mb-4">
+                Terms & Conditions
+            </h2>
 
-                        <p>
-                            Information on this website does not constitute
-                            a binding service agreement. Project scope,
-                            pricing and delivery timelines will be agreed
-                            upon separately with the client.
-                        </p>
+            <p class="terms-intro">
 
-                    </article>
+                Please read these terms and conditions before
+                using the MSAIT LTD website or enquiring about services.
 
-
-                    <article class="terms-card">
-
-                        <h3>03. Intellectual Property</h3>
-
-                        <p>
-                            Unless otherwise stated, website design, text,
-                            branding and original content belong to their
-                            respective owners and must not be reproduced
-                            without permission.
-                        </p>
-
-                    </article>
+            </p>
 
 
-                    <article class="terms-card">
+            <div class="terms-grid">
 
-                        <h3>04. Third-Party Services</h3>
+                <article class="terms-card">
 
-                        <p>
-                            This website may use third-party tools,
-                            libraries or external links. We do not control
-                            third-party websites or their policies.
-                        </p>
+                    <h3>01. Website Use</h3>
 
-                    </article>
+                    <p>
+                        This website provides general information about
+                        MSAIT LTD and its IT services. You agree to use
+                        this website lawfully and not to misuse its content
+                        or functionality.
+                    </p>
 
-
-                    <article class="terms-card">
-
-                        <h3>05. Limitation of Liability</h3>
-
-                        <p>
-                            Website information is provided for general
-                            informational purposes. Nothing in these terms
-                            limits liability where such limitation is
-                            prohibited by applicable law.
-                        </p>
-
-                    </article>
+                </article>
 
 
-                    <article class="terms-card">
+                <article class="terms-card">
 
-                        <h3>06. Updates and Contact</h3>
+                    <h3>02. Services and Agreements</h3>
 
-                        <p>
-                            These terms may be updated when necessary.
-                            For questions about these terms or our services,
-                            contact MSAIT LTD using the contact information
-                            provided on this website.
-                        </p>
+                    <p>
+                        Information on this website does not constitute
+                        a binding service agreement. Project scope,
+                        pricing and delivery timelines will be agreed
+                        upon separately with the client.
+                    </p>
 
-                    </article>
+                </article>
 
-                </div>
 
-                <p class="terms-updated">
-                    Last updated: October 2026
-                </p>
+                <article class="terms-card">
+
+                    <h3>03. Intellectual Property</h3>
+
+                    <p>
+                        Unless otherwise stated, website design, text,
+                        branding and original content belong to their
+                        respective owners and must not be reproduced
+                        without permission.
+                    </p>
+
+                </article>
+
+
+                <article class="terms-card">
+
+                    <h3>04. Third-Party Services</h3>
+
+                    <p>
+                        This website may use third-party tools,
+                        libraries or external links. We do not control
+                        third-party websites or their policies.
+                    </p>
+
+                </article>
+
+
+                <article class="terms-card">
+
+                    <h3>05. Limitation of Liability</h3>
+
+                    <p>
+                        Website information is provided for general
+                        informational purposes. Nothing in these terms
+                        limits liability where such limitation is
+                        prohibited by applicable law.
+                    </p>
+
+                </article>
+
+
+                <article class="terms-card">
+
+                    <h3>06. Updates and Contact</h3>
+
+                    <p>
+                        These terms may be updated when necessary.
+                        For questions about these terms or our services,
+                        contact MSAIT LTD using the contact information
+                        provided on this website.
+                    </p>
+
+                </article>
 
             </div>
 
-        </section>
+            <p class="terms-updated">
+                Last updated: October 2026
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
 
     </main>
 
@@ -1781,6 +1793,49 @@
             }
 
         });
+
+      const toggleTermsBtn = document.getElementById("toggleTermsBtn");
+      const termsContent = document.getElementById("termsContent");
+      const termsToggleIcon = document.getElementById("termsToggleIcon");
+
+      if (toggleTermsBtn && termsContent && termsToggleIcon) {
+
+          toggleTermsBtn.addEventListener("click", function () {
+
+              const termsAreClosed = termsContent.classList.contains("hidden");
+
+              termsContent.classList.toggle("hidden");
+
+              toggleTermsBtn.setAttribute(
+                  "aria-expanded",
+                  String(termsAreClosed)
+              );
+
+              termsToggleIcon.className = termsAreClosed
+                  ? "fa-solid fa-chevron-up"
+                  : "fa-solid fa-chevron-down";
+
+          });
+
+      }
+
+    document.querySelectorAll('a[href="#terms"]').forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            if (termsContent && toggleTermsBtn && termsToggleIcon) {
+
+                termsContent.classList.remove("hidden");
+
+                toggleTermsBtn.setAttribute("aria-expanded", "true");
+
+                termsToggleIcon.className = "fa-solid fa-chevron-up";
+
+            }
+
+        });
+
+    });
 
     </script>
 

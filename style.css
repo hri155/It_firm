@@ -83,7 +83,7 @@
       letter-spacing: -1px;
     }
 
-    .nav-link {
+    /* .nav-link {
       position: relative;
       padding: 10px 0;
       color: #dce6f6;
@@ -104,7 +104,7 @@
       background: #08d3f3;
       bottom: 2px;
       left: 0;
-    }
+    } */
 
     .hero-section {
       position: relative;
@@ -617,18 +617,14 @@ body.modal-open {
 
 }
 
-/* Navbar */
-.main-bg {
-    background-color: #041326;
-}
 
 .nav-link {
+    position: relative;
+    padding: 10px 0;
     color: #cbd5e1;
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
-    position: relative;
-    padding: 10px 0;
     transition: color 0.3s ease;
 }
 
@@ -653,7 +649,7 @@ body.modal-open {
     width: 100%;
 }
 
-/* Mobile Navigation Menu */
+
 .mobile-menu {
     position: absolute;
     top: 100%;
@@ -682,12 +678,11 @@ body.modal-open {
     color: #22d3ee;
 }
 
-/* Ensure hidden menu stays hidden */
+
 .mobile-menu.hidden {
     display: none !important;
 }
 
-/* Mobile menu button */
 #mobileMenuBtn {
     color: #22d3ee;
     cursor: pointer;
@@ -697,7 +692,7 @@ body.modal-open {
     background-color: #0c2c46;
 }
 
-/* Navbar responsive layout */
+
 @media (max-width: 1023px) {
     .navbar-center {
         display: none !important;
@@ -706,5 +701,63 @@ body.modal-open {
     .mobile-menu {
         max-height: 75vh;
         overflow-y: auto;
+    }
+}
+
+
+.terms-toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    width: 100%;
+    padding: 20px 24px;
+
+    border: 1px solid #07518a;
+    border-radius: 14px;
+
+    background: linear-gradient(
+        145deg,
+        #04172d,
+        #020d1c
+    );
+
+    color: #08c9f7;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.terms-toggle-btn:hover {
+    border-color: #08c9f7;
+    background: #06203b;
+}
+
+.terms-toggle-btn:focus-visible {
+    outline: 2px solid #08c9f7;
+    outline-offset: 4px;
+}
+
+#termsToggleIcon {
+    transition: transform 0.3s ease;
+}
+
+.terms-toggle-btn[aria-expanded="true"] #termsToggleIcon {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 600px) {
+    .terms-toggle-btn {
+        padding: 16px;
+        font-size: 14px;
     }
 }
